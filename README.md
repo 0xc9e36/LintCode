@@ -2,6 +2,28 @@
 
 
 ## 目录
+├── easy
+│   ├── 111.爬楼梯.java
+│   ├── 13.字符串查找.java
+│   ├── 14.二分查找.java
+│   ├── 204.单例.java
+│   ├── 211.字符串置换.java
+│   ├── 28.搜索二维矩阵.java
+│   ├── 35.翻转链表.java
+│   ├── 39.恢复旋转排序数组.java
+│   ├── 46.主元素.java
+│   ├── 491.回文数.java
+│   ├── 56.两数之和.java
+│   ├── 5.旋转字符串.java
+│   ├── 66.二叉树的前序遍历.java
+│   ├── 6.合并排序数组.java
+│   └── 9.Fizz Buzz 问题.java
+├── README.md
+└── start
+    ├── 366.斐波纳契数列.java
+    ├── 452.删除链表元素.java
+    ├── 454.矩阵面积.java
+    └── 463.整数排序.java
 
 
 ## 起因
@@ -13,5 +35,3 @@
 > 补充:发起pull request的commit message请参考文章[Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 
 ## 参考
-
-非常感谢在刷题过程中参考的以下资料：
