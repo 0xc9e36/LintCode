@@ -6,29 +6,24 @@ public class Solution {
     public void heapify(int[] A) {
         // write your code here
         int N = A.length - 1;
-        if (N == 0) {
-            return ;
-        }
         for(int k = N / 2; k >= 0; k--) {
-            sink(A, k);
+            sink(A, k, N);
         }
     }
     
-    public void sink(int[] A, int i) {
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-        int min = i;
-        if(left < A.length && A[left] < A[min]) {
-            min = left;
-        }
-        if(right < A.length && A[right] < A[min]) {
-            min = right;
-        }
-        if(min != i) {
-            int temp = A[min];
-            A[min] = A[i];
-            A[i] = temp;
-            sink(A, min);
+    public void sink(int[] A, int i, int N) {
+        while((2 * i + 1) <= N) {
+            int j = 2 * i + 1;
+            if(j < N && A[j] > A[j + 1]) {
+                j++;
+            }
+            if(A[i] < A[j]) {
+                break;
+            }
+            int temp = A[i];
+            A[i] = A[j];
+            A[j] = temp;
+            i = j;
         }
     }
 }
